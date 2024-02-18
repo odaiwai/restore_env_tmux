@@ -9,6 +9,6 @@ for command in `tmux show-environment -s`
 do
     echo "$command"
     # The tmux command above returns a list of lines for a script
-    # Otherwise, `eval` on arbiotrary input is not recommended.
+    # Otherwise, `eval` on arbitrary input is not recommended.
     eval $command
 done
